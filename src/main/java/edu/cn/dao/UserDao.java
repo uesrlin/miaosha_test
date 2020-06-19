@@ -8,8 +8,8 @@ import org.apache.ibatis.annotations.Select;
 @Mapper
 
 public interface UserDao {
-    @Select("select * from User where id=#{id}")
+    @Select("select * from user where id=#{id}")
     public  User getById(@Param("id") int id);
-    @Insert("insert into User(id,name) values(#{id}, #{name})")
+    @Insert("insert into user(id,name) values(#{id}, #{name})")
     public int insert(User user);
 }

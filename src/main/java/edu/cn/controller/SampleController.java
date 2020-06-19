@@ -7,6 +7,7 @@ import edu.cn.redis.UserKey;
 import edu.cn.result.Result;
 import edu.cn.service.UserService;
 
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("/demo")
+@Api(value = "数据测试接口",tags = {"测试数据库相关业务controller"})
 public class SampleController {
     @Autowired
     UserService userService;

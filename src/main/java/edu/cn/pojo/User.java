@@ -1,14 +1,14 @@
 package edu.cn.pojo;
 
 public class User {
-   public int id;
-    public String name;
+    private Integer id;
+    private String name;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

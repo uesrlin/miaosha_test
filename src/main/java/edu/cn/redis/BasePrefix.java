@@ -20,7 +20,7 @@ public  abstract class BasePrefix implements KeyPrefix {
 
     @Override
     public String getPrefix() {
-        String className = getClass().getSimpleName();  //获取类名，由于UserKey类继承了该抽象类，所以获取的类名是UserKey
+        String className = getClass().getSimpleName();
         return className + ":" + prefix;
     }
 

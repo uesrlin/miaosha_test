@@ -8,14 +8,12 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class UserService {
+
     @Autowired
     UserDao userDao;
     public User getById(int id){
         return userDao.getById(id);
     }
-
-
-
 
     @Transactional    //注释掉后报错，但是仍然可以插入数据库
     public Boolean tx(){

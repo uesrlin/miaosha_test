@@ -2,7 +2,10 @@ package edu.cn.redis;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
+/*
+Redis配置类
 
+ */
 @Component
 @ConfigurationProperties(prefix = "redis")
 public class RedisConfig {
